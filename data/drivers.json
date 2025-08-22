@@ -1,0 +1,121 @@
+{
+  "drivers": [
+    {
+      "id": "driver-001",
+      "name": "王师傅",
+      "photo": "/images/drivers/wang.jpg",
+      "age": 45,
+      "languages": ["中文", "俄语"],
+      "city": "阿拉木图",
+      "experience": "15年驾驶经验",
+      "vehicles": [
+        {
+          "type": "经济型轿车",
+          "model": "Toyota Camry",
+          "year": 2020,
+          "seats": 4,
+          "photo": "/images/vehicles/camry.jpg",
+          "features": ["空调", "GPS导航", "USB充电"]
+        },
+        {
+          "type": "商务车",
+          "model": "Mercedes V-Class",
+          "year": 2021,
+          "seats": 7,
+          "photo": "/images/vehicles/vclass.jpg", 
+          "features": ["豪华内饰", "WiFi", "饮水", "充电设备"]
+        }
+      ],
+      "services": ["机场接送", "城市观光", "商务陪同", "长途包车"],
+      "pricing": {
+        "airportTransfer": 25,
+        "cityTour": 60,
+        "businessAccompany": 80,
+        "dailyRental": 150,
+        "currency": "USD"
+      },
+      "coverage": ["阿拉木图市区", "阿拉木图机场", "周边城市"],
+      "availability": "24小时",
+      "description": "资深华人司机，在哈萨克斯坦生活15年，熟悉当地路况和景点。提供安全可靠的驾驶服务，可用中文沟通。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "driver_wang"
+      },
+      "rating": 4.8,
+      "completedTrips": 500,
+      "specialties": ["商务接待", "旅游向导"]
+    },
+    {
+      "id": "driver-002",
+      "name": "努尔兰",
+      "photo": "/images/drivers/nurlan.jpg",
+      "age": 38,
+      "languages": ["哈萨克语", "俄语", "基础中文"],
+      "city": "阿斯塔纳",
+      "experience": "12年驾驶经验",
+      "vehicles": [
+        {
+          "type": "SUV",
+          "model": "Toyota Land Cruiser",
+          "year": 2019,
+          "seats": 7,
+          "photo": "/images/vehicles/landcruiser.jpg",
+          "features": ["四驱", "越野能力强", "大空间", "安全性高"]
+        }
+      ],
+      "services": ["机场接送", "城际交通", "商务包车", "户外探险"],
+      "pricing": {
+        "airportTransfer": 30,
+        "intercityTransfer": 100,
+        "dailyRental": 180,
+        "currency": "USD"
+      },
+      "coverage": ["阿斯塔纳市区", "阿斯塔纳机场", "阿拉木图-阿斯塔纳"],
+      "availability": "全天候",
+      "description": "本地资深司机，对哈萨克斯坦各城市路线非常熟悉。车辆状况良好，驾驶技术娴熟，安全记录优秀。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "driver_nurlan"
+      },
+      "rating": 4.6,
+      "completedTrips": 380,
+      "specialties": ["长途驾驶", "户外路线"]
+    },
+    {
+      "id": "driver-003",
+      "name": "陈师傅",
+      "photo": "/images/drivers/chen.jpg",
+      "age": 42,
+      "languages": ["中文", "俄语", "哈萨克语"],
+      "city": "阿拉木图",
+      "experience": "18年驾驶经验",
+      "vehicles": [
+        {
+          "type": "豪华轿车",
+          "model": "BMW 5 Series",
+          "year": 2022,
+          "seats": 5,
+          "photo": "/images/vehicles/bmw5.jpg",
+          "features": ["真皮座椅", "自动空调", "音响系统", "隐私玻璃"]
+        }
+      ],
+      "services": ["VIP接送", "商务会议", "重要客户陪同"],
+      "pricing": {
+        "vipTransfer": 50,
+        "businessMeeting": 120,
+        "dailyRental": 250,
+        "currency": "USD"
+      },
+      "coverage": ["阿拉木图全市", "重要商务区域"],
+      "availability": "预约制",
+      "description": "高端商务司机服务，专门为重要客户提供VIP级别的接送服务。车辆豪华，服务专业，注重细节和客户体验。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX", 
+        "wechat": "vip_driver_chen"
+      },
+      "rating": 4.9,
+      "completedTrips": 200,
+      "specialties": ["VIP服务", "商务礼仪"]
+    }
+  ]
+}

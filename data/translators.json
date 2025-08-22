@@ -1,0 +1,88 @@
+{
+  "translators": [
+    {
+      "id": "translator-001",
+      "name": "张译员",
+      "photo": "/images/translators/zhang.jpg",
+      "gender": "男",
+      "age": 28,
+      "languages": ["中文", "俄语", "哈萨克语"],
+      "proficiency": {
+        "russian": "流利",
+        "kazakh": "日常交流",
+        "english": "基础"
+      },
+      "specialties": ["商务谈判", "合同翻译", "政府事务"],
+      "city": "阿拉木图",
+      "experience": "5年翻译经验",
+      "education": "哈萨克斯坦国立大学语言学学士",
+      "dailyRate": 100,
+      "withCarRate": 150,
+      "currency": "USD",
+      "availability": "全天候",
+      "description": "专业商务翻译，熟悉哈萨克斯坦商业环境，曾为多家中国企业提供投资考察翻译服务。精通商务术语，能够准确传达商业意图。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "translator_zhang"
+      },
+      "rating": 4.8,
+      "completedJobs": 150
+    },
+    {
+      "id": "translator-002", 
+      "name": "李娜",
+      "photo": "/images/translators/lina.jpg",
+      "gender": "女",
+      "age": 32,
+      "languages": ["中文", "俄语", "哈萨克语", "英语"],
+      "proficiency": {
+        "russian": "母语级别",
+        "kazakh": "流利",
+        "english": "流利"
+      },
+      "specialties": ["法律文件", "医疗翻译", "教育培训"],
+      "city": "阿拉木图",
+      "experience": "8年翻译经验",
+      "education": "莫斯科国立大学翻译学硕士",
+      "dailyRate": 120,
+      "withCarRate": 170,
+      "currency": "USD",
+      "availability": "工作日",
+      "description": "资深翻译专家，具备深厚的语言功底和跨文化交流经验。专长于法律和医疗领域翻译，为众多中国企业提供过专业服务。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "translator_lina"
+      },
+      "rating": 4.9,
+      "completedJobs": 280
+    },
+    {
+      "id": "translator-003",
+      "name": "阿里木",
+      "photo": "/images/translators/alim.jpg",
+      "gender": "男", 
+      "age": 35,
+      "languages": ["中文", "哈萨克语", "俄语"],
+      "proficiency": {
+        "kazakh": "母语级别",
+        "russian": "流利",
+        "chinese": "流利"
+      },
+      "specialties": ["政府事务", "文化交流", "旅游陪同"],
+      "city": "阿斯塔纳",
+      "experience": "10年翻译经验",
+      "education": "哈萨克斯坦欧亚大学中文系学士",
+      "dailyRate": 90,
+      "withCarRate": 140,
+      "currency": "USD",
+      "availability": "全天候",
+      "description": "本地哈萨克族翻译，对当地文化和政府流程非常熟悉。曾为多个中哈合作项目提供翻译服务，在政府事务处理方面经验丰富。",
+      "contact": {
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "translator_alim"
+      },
+      "rating": 4.7,
+      "completedJobs": 320
+    }
+  ]
+}

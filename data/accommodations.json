@@ -1,0 +1,181 @@
+{
+  "accommodations": [
+    {
+      "id": "hotel-001",
+      "name": "阿拉木图商务酒店",
+      "type": "酒店",
+      "photo": "/images/accommodations/business-hotel.jpg",
+      "gallery": [
+        "/images/accommodations/business-hotel-1.jpg",
+        "/images/accommodations/business-hotel-2.jpg",
+        "/images/accommodations/business-hotel-3.jpg"
+      ],
+      "city": "阿拉木图",
+      "address": "共和国大街123号",
+      "rating": 4.5,
+      "priceRange": {
+        "min": 80,
+        "max": 150,
+        "currency": "USD",
+        "unit": "晚"
+      },
+      "roomTypes": [
+        {
+          "type": "标准间",
+          "price": 80,
+          "features": ["双人床", "免费WiFi", "空调", "电视"]
+        },
+        {
+          "type": "商务套房", 
+          "price": 120,
+          "features": ["客厅", "办公桌", "小厨房", "城市景观"]
+        },
+        {
+          "type": "豪华套房",
+          "price": 150,
+          "features": ["独立客厅", "按摩浴缸", "阳台", "24小时客房服务"]
+        }
+      ],
+      "amenities": [
+        "免费WiFi",
+        "健身房",
+        "商务中心", 
+        "会议室",
+        "餐厅",
+        "洗衣服务",
+        "机场接送",
+        "中文服务"
+      ],
+      "languages": ["中文", "英语", "俄语"],
+      "description": "位于市中心的现代化商务酒店，距离主要商务区仅5分钟车程。提供专业的中文服务，是中国商务人士的理想选择。",
+      "contact": {
+        "phone": "+7-XXX-XXX-XXXX",
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "almaty_business_hotel"
+      },
+      "location": {
+        "landmark": "距离机场30分钟",
+        "nearby": ["购物中心", "餐厅", "银行", "政府大楼"]
+      },
+      "specialOffers": "长期住宿8折优惠"
+    },
+    {
+      "id": "apartment-001",
+      "name": "市中心精品公寓",
+      "type": "民宿",
+      "photo": "/images/accommodations/apartment.jpg",
+      "gallery": [
+        "/images/accommodations/apartment-1.jpg",
+        "/images/accommodations/apartment-2.jpg",
+        "/images/accommodations/apartment-3.jpg"
+      ],
+      "city": "阿拉木图",
+      "address": "阿拜大街456号",
+      "rating": 4.7,
+      "priceRange": {
+        "min": 60,
+        "max": 100,
+        "currency": "USD",
+        "unit": "晚"
+      },
+      "roomTypes": [
+        {
+          "type": "一居室",
+          "price": 60,
+          "features": ["独立厨房", "洗衣机", "WiFi", "空调"]
+        },
+        {
+          "type": "两居室",
+          "price": 85,
+          "features": ["两个卧室", "客厅", "完整厨房", "阳台"]
+        },
+        {
+          "type": "三居室",
+          "price": 100,
+          "features": ["三个卧室", "大客厅", "餐厅", "两个卫生间"]
+        }
+      ],
+      "amenities": [
+        "完整厨房设备",
+        "洗衣机",
+        "免费WiFi",
+        "空调暖气",
+        "有线电视",
+        "安全门禁",
+        "停车位",
+        "中文房东"
+      ],
+      "languages": ["中文", "俄语"],
+      "description": "温馨的家庭式公寓，适合长期居住和商务出差。房东是华人，可提供中文服务和当地生活指导。",
+      "contact": {
+        "phone": "+7-XXX-XXX-XXXX",
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "almaty_apartment"
+      },
+      "location": {
+        "landmark": "市中心步行区",
+        "nearby": ["地铁站", "超市", "餐厅", "公园"]
+      },
+      "specialOffers": "月租优惠价，包含水电费"
+    },
+    {
+      "id": "hotel-002",
+      "name": "阿斯塔纳国际酒店",
+      "type": "酒店",
+      "photo": "/images/accommodations/astana-hotel.jpg",
+      "gallery": [
+        "/images/accommodations/astana-hotel-1.jpg",
+        "/images/accommodations/astana-hotel-2.jpg",
+        "/images/accommodations/astana-hotel-3.jpg"
+      ],
+      "city": "阿斯塔纳",
+      "address": "独立大街789号",
+      "rating": 4.6,
+      "priceRange": {
+        "min": 100,
+        "max": 200,
+        "currency": "USD",
+        "unit": "晚"
+      },
+      "roomTypes": [
+        {
+          "type": "高级客房",
+          "price": 100,
+          "features": ["大床", "城市景观", "迷你吧", "工作区"]
+        },
+        {
+          "type": "行政套房",
+          "price": 150,
+          "features": ["行政酒廊", "免费早餐", "会议室使用", "机场接送"]
+        },
+        {
+          "type": "总统套房",
+          "price": 200,
+          "features": ["独立客厅", "餐厅", "厨房", "管家服务"]
+        }
+      ],
+      "amenities": [
+        "五星级服务",
+        "室内游泳池",
+        "SPA中心",
+        "多个餐厅",
+        "商务中心",
+        "会议设施",
+        "礼宾服务",
+        "多语言服务"
+      ],
+      "languages": ["中文", "英语", "俄语", "哈萨克语"],
+      "description": "阿斯塔纳地标性五星级酒店，提供国际标准的豪华服务。是政府和商务活动的首选住宿地点。",
+      "contact": {
+        "phone": "+7-XXX-XXX-XXXX",
+        "whatsapp": "+7-XXX-XXX-XXXX",
+        "wechat": "astana_international"
+      },
+      "location": {
+        "landmark": "政府区核心位置",
+        "nearby": ["总统府", "国会大厦", "商务中心", "购物区"]
+      },
+      "specialOffers": "商务客户专享优惠套餐"
+    }
+  ]
+}
