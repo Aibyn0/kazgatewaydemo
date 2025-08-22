@@ -14,7 +14,7 @@
           "model": "Toyota Camry",
           "year": 2020,
           "seats": 4,
-          "photo": "/images/vehicles/camry.jpg",
+          "photo": "/images/placeholder-car.svg",
           "features": ["空调", "GPS导航", "USB充电"]
         },
         {
@@ -22,7 +22,7 @@
           "model": "Mercedes V-Class",
           "year": 2021,
           "seats": 7,
-          "photo": "/images/vehicles/vclass.jpg", 
+          "photo": "/images/placeholder-car.svg", 
           "features": ["豪华内饰", "WiFi", "饮水", "充电设备"]
         }
       ],
@@ -59,7 +59,7 @@
           "model": "Toyota Land Cruiser",
           "year": 2019,
           "seats": 7,
-          "photo": "/images/vehicles/landcruiser.jpg",
+          "photo": "/images/placeholder-car.svg",
           "features": ["四驱", "越野能力强", "大空间", "安全性高"]
         }
       ],
@@ -95,7 +95,7 @@
           "model": "BMW 5 Series",
           "year": 2022,
           "seats": 5,
-          "photo": "/images/vehicles/bmw5.jpg",
+          "photo": "/images/placeholder-car.svg",
           "features": ["真皮座椅", "自动空调", "音响系统", "隐私玻璃"]
         }
       ],
