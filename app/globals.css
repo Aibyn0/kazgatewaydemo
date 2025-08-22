@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.container-responsive {
+  @apply container mx-auto px-4 md:px-6 lg:px-8;
+}
+
+
