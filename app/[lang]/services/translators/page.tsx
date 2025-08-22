@@ -111,6 +111,38 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
         </div>
       </div>
 
+      {/* 预约联系 */}
+      <div className="bg-primary text-white rounded-lg p-8 text-center">
+        <h2 className="text-2xl font-semibold mb-4">
+          {t("预约翻译师服务", "Book Translator Service")}
+        </h2>
+        <p className="text-lg mb-6 opacity-90">
+          {t(
+            "通过我们预约专业翻译师，我们为您匹配最合适的翻译师并提供全程服务保障。",
+            "Book professional translators through us. We match you with the most suitable translator and provide full service guarantee."
+          )}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">📱</span>
+            <div>
+              <div className="font-medium">{t("微信联系", "WeChat Contact")}</div>
+              <div className="text-sm opacity-90">KazGateway_Official</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">💬</span>
+            <div>
+              <div className="font-medium">WhatsApp</div>
+              <div className="text-sm opacity-90">+7-XXX-XXX-XXXX</div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-6 text-sm opacity-75">
+          {t("24小时内回复 • 专业服务 • 价格透明", "Reply within 24 hours • Professional service • Transparent pricing")}
+        </div>
+      </div>
+
       {/* 常见问题 */}
       <div>
         <h2 className="text-2xl font-semibold mb-6">
@@ -123,8 +155,8 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
             </h3>
             <p className="text-sm text-gray-600">
               {t(
-                "根据您的具体需求选择：商务谈判选择商务专长的翻译师，法律文件选择法律背景的翻译师，医疗相关选择医疗翻译师。",
-                "Choose based on your specific needs: business negotiations, legal documents, or medical translation."
+                "根据您的具体需求选择：商务谈判选择商务专长的翻译师，法律文件选择法律背景的翻译师，医疗相关选择医疗翻译师。我们会为您推荐最合适的翻译师。",
+                "Choose based on your specific needs: business negotiations, legal documents, or medical translation. We will recommend the most suitable translator for you."
               )}
             </p>
           </div>
@@ -134,8 +166,8 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
             </h3>
             <p className="text-sm text-gray-600">
               {t(
-                "按天计费，标准翻译服务$100/天，带车翻译服务$150/天。具体价格可能因翻译师经验和专业程度有所调整。",
-                "Daily rates: $100/day for standard service, $150/day with car. Prices may vary based on translator experience."
+                "按天计费，标准翻译服务$100/天起，带车翻译服务$150/天起。具体价格根据翻译师经验、专业程度和服务内容确定。",
+                "Daily rates starting from $100/day for standard service, $150/day with car. Final price depends on translator experience, expertise and service content."
               )}
             </p>
           </div>
@@ -145,8 +177,8 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
             </h3>
             <p className="text-sm text-gray-600">
               {t(
-                "主要服务阿拉木图和阿斯塔纳，其他城市可根据具体情况安排。",
-                "Primarily serving Almaty and Astana, other cities available upon request."
+                "主要服务阿拉木图和阿斯塔纳，其他城市可根据具体情况安排。我们的翻译师网络覆盖哈萨克斯坦主要城市。",
+                "Primarily serving Almaty and Astana, other cities available upon request. Our translator network covers major cities in Kazakhstan."
               )}
             </p>
           </div>

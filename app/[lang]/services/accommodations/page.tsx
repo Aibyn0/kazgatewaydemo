@@ -1,5 +1,6 @@
 import { getAccommodationsData } from "@/lib/data";
 import { AccommodationCard } from "@/components/accommodation-card";
+import { ContactSection } from "@/components/contact-section";
 
 export const dynamic = "force-static";
 
@@ -206,6 +207,16 @@ export default function AccommodationsPage({ params }: { params: { lang: "zh" | 
           </div>
         </div>
       </div>
+
+      {/* 预约联系 */}
+      <ContactSection
+        title={t("预约住宿服务", "Book Accommodation Service")}
+        description={t(
+          "通过我们预约优质住宿，我们为您推荐最适合的酒店或民宿，享受特殊优惠价格。",
+          "Book quality accommodations through us. We recommend the most suitable hotels or B&Bs with special discount prices."
+        )}
+        lang={lang}
+      />
 
       {/* 常见问题 */}
       <div>

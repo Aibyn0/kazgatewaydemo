@@ -22,7 +22,7 @@ export function TranslatorCard({ translator, lang }: TranslatorCardProps) {
             className="object-cover rounded-full"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = "/images/placeholder-avatar.jpg";
+              target.src = "/images/placeholder-avatar.svg";
             }}
           />
         </div>
@@ -96,25 +96,13 @@ export function TranslatorCard({ translator, lang }: TranslatorCardProps) {
           {translator.description}
         </p>
 
-        {/* 联系按钮 */}
-        <div className="flex gap-2 mt-auto">
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="flex-1"
-            onClick={() => window.open(`https://wa.me/${translator.contact.whatsapp.replace(/[^0-9]/g, '')}`, '_blank')}
-          >
-            WhatsApp
-          </Button>
+        {/* 预约按钮 */}
+        <div className="mt-auto">
           <Button 
             size="sm" 
-            className="flex-1"
-            onClick={() => {
-              // 微信联系逻辑
-              alert(`${t('微信号', 'WeChat ID')}: ${translator.contact.wechat}`);
-            }}
+            className="w-full"
           >
-            {t("微信联系", "WeChat")}
+            {t("预约此翻译师", "Book This Translator")}
           </Button>
         </div>
       </CardContent>

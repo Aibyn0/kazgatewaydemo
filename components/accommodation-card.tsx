@@ -22,7 +22,7 @@ export function AccommodationCard({ accommodation, lang }: AccommodationCardProp
             className="object-cover rounded-t-lg"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = "/images/placeholder-hotel.jpg";
+              target.src = "/images/placeholder-hotel.svg";
             }}
           />
           <div className="absolute top-2 left-2">
@@ -144,24 +144,13 @@ export function AccommodationCard({ accommodation, lang }: AccommodationCardProp
           {accommodation.description}
         </p>
 
-        {/* 联系按钮 */}
-        <div className="flex gap-2 mt-auto">
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="flex-1"
-            onClick={() => window.open(`https://wa.me/${accommodation.contact.whatsapp.replace(/[^0-9]/g, '')}`, '_blank')}
-          >
-            WhatsApp
-          </Button>
+        {/* 预约按钮 */}
+        <div className="mt-auto">
           <Button 
             size="sm" 
-            className="flex-1"
-            onClick={() => {
-              alert(`${t('微信号', 'WeChat ID')}: ${accommodation.contact.wechat}`);
-            }}
+            className="w-full"
           >
-            {t("微信联系", "WeChat")}
+            {t("预约此住宿", "Book This Accommodation")}
           </Button>
         </div>
       </CardContent>

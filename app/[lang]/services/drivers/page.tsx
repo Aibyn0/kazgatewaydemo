@@ -1,5 +1,6 @@
 import { getDriversData } from "@/lib/data";
 import { DriverCard } from "@/components/driver-card";
+import { ContactSection } from "@/components/contact-section";
 
 export const dynamic = "force-static";
 
@@ -160,6 +161,16 @@ export default function DriversPage({ params }: { params: { lang: "zh" | "en" } 
           </div>
         </div>
       </div>
+
+      {/* 预约联系 */}
+      <ContactSection
+        title={t("预约司机服务", "Book Driver Service")}
+        description={t(
+          "通过我们预约专业司机，我们为您匹配最合适的司机和车辆，提供安全可靠的出行服务。",
+          "Book professional drivers through us. We match you with the most suitable driver and vehicle for safe and reliable transportation."
+        )}
+        lang={lang}
+      />
 
       {/* 常见问题 */}
       <div>
