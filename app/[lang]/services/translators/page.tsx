@@ -23,34 +23,25 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
         </p>
       </div>
 
-      {/* 服务特色 */}
-      <div className="grid md:grid-cols-3 gap-6 mb-12">
-        <div className="text-center p-6 bg-blue-50 rounded-lg">
-          <div className="text-2xl mb-3">🌍</div>
-          <h3 className="font-semibold mb-2">
-            {t("多语言支持", "Multi-language Support")}
-          </h3>
-          <p className="text-sm text-gray-600">
-            {t("中文、俄语、哈萨克语、英语", "Chinese, Russian, Kazakh, English")}
-          </p>
-        </div>
-        <div className="text-center p-6 bg-green-50 rounded-lg">
-          <div className="text-2xl mb-3">💼</div>
-          <h3 className="font-semibold mb-2">
-            {t("专业领域", "Professional Fields")}
-          </h3>
-          <p className="text-sm text-gray-600">
-            {t("商务、法律、医疗、技术", "Business, Legal, Medical, Technical")}
-          </p>
-        </div>
-        <div className="text-center p-6 bg-purple-50 rounded-lg">
-          <div className="text-2xl mb-3">⚡</div>
-          <h3 className="font-semibold mb-2">
-            {t("快速响应", "Quick Response")}
-          </h3>
-          <p className="text-sm text-gray-600">
-            {t("24小时内确认预约", "Confirmation within 24 hours")}
-          </p>
+      {/* 核心信息 */}
+      <div className="bg-blue-50 rounded-lg p-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 text-center">
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              {t("语言支持", "Language Support")}
+            </h3>
+            <p className="text-gray-600">
+              {t("中文-俄语、中文-哈萨克语", "Chinese-Russian, Chinese-Kazakh")}
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg mb-2">
+              {t("服务价格", "Service Pricing")}
+            </h3>
+            <p className="text-gray-600">
+              {t("$100/天，带车翻译 $150/天", "$100/day, with car $150/day")}
+            </p>
+          </div>
         </div>
       </div>
 
@@ -66,50 +57,7 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
         </div>
       </div>
 
-      {/* 服务流程 */}
-      <div className="bg-gray-50 rounded-lg p-8">
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          {t("服务流程", "Service Process")}
-        </h2>
-        <div className="grid md:grid-cols-4 gap-6">
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              1
-            </div>
-            <h3 className="font-medium mb-2">{t("选择翻译师", "Choose Translator")}</h3>
-            <p className="text-sm text-gray-600">
-              {t("根据需求选择合适的翻译师", "Select based on your needs")}
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              2
-            </div>
-            <h3 className="font-medium mb-2">{t("联系咨询", "Contact & Consult")}</h3>
-            <p className="text-sm text-gray-600">
-              {t("通过微信或WhatsApp联系", "Contact via WeChat or WhatsApp")}
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              3
-            </div>
-            <h3 className="font-medium mb-2">{t("确认预约", "Confirm Booking")}</h3>
-            <p className="text-sm text-gray-600">
-              {t("确认时间、地点和服务内容", "Confirm time, location and services")}
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-3">
-              4
-            </div>
-            <h3 className="font-medium mb-2">{t("开始服务", "Start Service")}</h3>
-            <p className="text-sm text-gray-600">
-              {t("翻译师按时到达提供服务", "Translator arrives on time")}
-            </p>
-          </div>
-        </div>
-      </div>
+
 
       {/* 预约联系 */}
       <div className="bg-primary text-white rounded-lg p-8 text-center">
@@ -143,45 +91,14 @@ export default function TranslatorsPage({ params }: { params: { lang: "zh" | "en
         </div>
       </div>
 
-      {/* 常见问题 */}
-      <div>
-        <h2 className="text-2xl font-semibold mb-6">
-          {t("常见问题", "Frequently Asked Questions")}
+      {/* 服务说明 */}
+      <div className="bg-gray-50 rounded-lg p-6">
+        <h2 className="text-xl font-semibold mb-4 text-center">
+          {t("服务说明", "Service Information")}
         </h2>
-        <div className="space-y-4">
-          <div className="border rounded-lg p-4">
-            <h3 className="font-medium mb-2">
-              {t("如何选择合适的翻译师？", "How to choose the right translator?")}
-            </h3>
-            <p className="text-sm text-gray-600">
-              {t(
-                "根据您的具体需求选择：商务谈判选择商务专长的翻译师，法律文件选择法律背景的翻译师，医疗相关选择医疗翻译师。我们会为您推荐最合适的翻译师。",
-                "Choose based on your specific needs: business negotiations, legal documents, or medical translation. We will recommend the most suitable translator for you."
-              )}
-            </p>
-          </div>
-          <div className="border rounded-lg p-4">
-            <h3 className="font-medium mb-2">
-              {t("翻译费用如何计算？", "How are translation fees calculated?")}
-            </h3>
-            <p className="text-sm text-gray-600">
-              {t(
-                "按天计费，标准翻译服务$100/天起，带车翻译服务$150/天起。具体价格根据翻译师经验、专业程度和服务内容确定。",
-                "Daily rates starting from $100/day for standard service, $150/day with car. Final price depends on translator experience, expertise and service content."
-              )}
-            </p>
-          </div>
-          <div className="border rounded-lg p-4">
-            <h3 className="font-medium mb-2">
-              {t("可以提供哪些城市的服务？", "Which cities do you serve?")}
-            </h3>
-            <p className="text-sm text-gray-600">
-              {t(
-                "主要服务阿拉木图和阿斯塔纳，其他城市可根据具体情况安排。我们的翻译师网络覆盖哈萨克斯坦主要城市。",
-                "Primarily serving Almaty and Astana, other cities available upon request. Our translator network covers major cities in Kazakhstan."
-              )}
-            </p>
-          </div>
+        <div className="text-center text-gray-600">
+          <p>{t("我们的翻译师主要掌握哈萨克语，同时具备日常俄语交流能力", "Our translators mainly speak Kazakh and can communicate in daily Russian")}</p>
+          <p className="mt-2">{t("服务城市：阿拉木图、阿斯塔纳", "Service cities: Almaty, Astana")}</p>
         </div>
       </div>
     </div>

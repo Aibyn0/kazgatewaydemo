@@ -6,7 +6,10 @@ import { LanguageSwitcher } from "./language-switcher";
 
 const navigation = [
   { name: "home", zh: "首页", en: "Home", href: "" },
-  { name: "services", zh: "服务", en: "Services", href: "/services" },
+  { name: "translators", zh: "翻译", en: "Translators", href: "/services/translators" },
+  { name: "drivers", zh: "司机", en: "Drivers", href: "/services/drivers" },
+  { name: "accommodations", zh: "住宿", en: "Stay", href: "/services/accommodations" },
+  { name: "consulting", zh: "咨询", en: "Consulting", href: "/services/consulting" },
   { name: "about", zh: "关于", en: "About", href: "/about" },
   { name: "contact", zh: "联系", en: "Contact", href: "/contact" },
 ] as const;

@@ -5,6 +5,7 @@ const SUPPORTED = ["zh", "en"] as const;
 type Lang = typeof SUPPORTED[number];
 
 export default function LangLayout({ children, params }: { children: ReactNode; params: { lang: Lang } }) {
+  const lang = params.lang;
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
@@ -21,9 +22,10 @@ export default function LangLayout({ children, params }: { children: ReactNode; 
             <div>
               <h4 className="font-medium text-slate-900 mb-4">服务</h4>
               <ul className="space-y-2 text-sm text-slate-600">
-                <li>中文翻译</li>
-                <li>司机接送</li>
-                <li>商务咨询</li>
+                <li><a href={`/${lang}/services/translators`} className="hover:underline">中文翻译</a></li>
+                <li><a href={`/${lang}/services/drivers`} className="hover:underline">司机接送</a></li>
+                <li><a href={`/${lang}/services/accommodations`} className="hover:underline">住宿服务</a></li>
+                <li><a href={`/${lang}/services/consulting`} className="hover:underline">商务咨询</a></li>
               </ul>
             </div>
             <div>

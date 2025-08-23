@@ -17,7 +17,7 @@ export default function Home({ params }: { params: { lang: "zh" | "en" } }) {
         </p>
         <div className="flex justify-center gap-3">
           <Button asChild>
-            <Link href={`/${lang}/services`}>{t("浏览服务", "Explore services")}</Link>
+            <Link href={`/${lang}/services/translators`}>{t("浏览服务", "Explore services")}</Link>
           </Button>
           <Button variant="outline" asChild>
             <Link href={`/${lang}/contact`}>{t("联系咨询", "Contact us")}</Link>
@@ -26,15 +26,40 @@ export default function Home({ params }: { params: { lang: "zh" | "en" } }) {
       </section>
 
       <section className="grid md:grid-cols-3 gap-6">
-        {[{ title: t("中文翻译", "Translation"), href: "translation" }, { title: t("司机接送", "Driver"), href: "driver" }, { title: t("商务咨询", "Consulting"), href: "consulting" }].map((c) => (
-          <Card key={c.href}>
+        {[
+          {
+            key: "translators",
+            title: t("翻译服务", "Translators"),
+            href: `/${lang}/services/translators`,
+            desc: t("中-俄/中-哈口译，$100/天起", "Zh-Ru/Zh-Kk, from $100/day")
+          },
+          {
+            key: "drivers",
+            title: t("司机服务", "Drivers"),
+            href: `/${lang}/services/drivers`,
+            desc: t("中文司机可选，包车服务", "Chinese-speaking optional, charter service")
+          },
+          {
+            key: "accommodations",
+            title: t("住宿服务", "Accommodations"),
+            href: `/${lang}/services/accommodations`,
+            desc: t("精选酒店/民宿，位置优越", "Selected hotels/B&Bs, prime locations")
+          },
+          {
+            key: "consulting",
+            title: t("商务咨询", "Consulting"),
+            href: `/${lang}/services/consulting`,
+            desc: t("落地合规与市场进入支持", "Market entry & compliance support")
+          }
+        ].map((c) => (
+          <Card key={c.key}>
             <CardHeader>
               <CardTitle>{c.title}</CardTitle>
-              <CardDescription>{t("专业、可靠、透明定价", "Professional, reliable, transparent pricing")}</CardDescription>
+              <CardDescription>{c.desc}</CardDescription>
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <Link href={`/${lang}/services?category=${c.href}`}>{t("查看详情", "View details")}</Link>
+                <Link href={c.href}>{t("查看详情", "View details")}</Link>
               </Button>
             </CardContent>
           </Card>
