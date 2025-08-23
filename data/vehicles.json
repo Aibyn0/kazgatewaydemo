@@ -1,0 +1,57 @@
+{
+  "vehicles": [
+    {
+      "id": "veh-001",
+      "type": "经济型轿车",
+      "model": "Toyota Camry",
+      "year": 2020,
+      "seats": 4,
+      "photo": "/images/vehicles/camry.jpg",
+      "gallery": [
+        "/images/vehicles/camry.jpg"
+      ],
+      "features": ["空调", "GPS导航", "USB充电"],
+      "city": "阿拉木图",
+      "pricing": { "airportTransfer": 25, "dailyRental": 120, "currency": "USD" },
+      "description": "舒适稳定，适合市内接送与短途出行。",
+      "contact": { "whatsapp": "+7-XXX-XXX-XXXX", "wechat": "kaz_vehicle" },
+      "available": "24小时"
+    },
+    {
+      "id": "veh-002",
+      "type": "商务车",
+      "model": "Mercedes V-Class",
+      "year": 2021,
+      "seats": 7,
+      "photo": "/images/vehicles/vclass.jpg",
+      "gallery": [
+        "/images/vehicles/vclass.jpg"
+      ],
+      "features": ["豪华内饰", "WiFi", "饮水", "充电设备"],
+      "city": "阿拉木图",
+      "pricing": { "airportTransfer": 40, "dailyRental": 180, "currency": "USD" },
+      "description": "适合商务接待与多人出行，空间宽敞。",
+      "contact": { "whatsapp": "+7-XXX-XXX-XXXX", "wechat": "kaz_vehicle" },
+      "available": "预约制"
+    },
+    {
+      "id": "veh-003",
+      "type": "SUV",
+      "model": "Toyota Land Cruiser",
+      "year": 2019,
+      "seats": 7,
+      "photo": "/images/vehicles/landcruiser.jpg",
+      "gallery": [
+        "/images/vehicles/landcruiser.jpg"
+      ],
+      "features": ["四驱", "越野能力强", "大空间"],
+      "city": "阿斯塔纳",
+      "pricing": { "airportTransfer": 50, "intercity": 140, "dailyRental": 220, "currency": "USD" },
+      "description": "长途与郊外线路的首选，兼顾舒适与安全。",
+      "contact": { "whatsapp": "+7-XXX-XXX-XXXX", "wechat": "kaz_vehicle" },
+      "available": "全天候"
+    }
+  ]
+}
+
+

@@ -33,52 +33,37 @@ export interface TranslatorsData {
   translators: Translator[];
 }
 
-// 司机类型定义
-export interface Vehicle {
-  type: string;
-  model: string;
-  year: number;
-  seats: number;
-  photo: string;
-  features: string[];
-}
+// 司机相关类型已移除，改为车辆资源目录模型
 
-export interface DriverPricing {
+// 车辆资源目录（用于公开展示可选车辆）
+export interface VehicleResourcePricing {
   airportTransfer?: number;
-  cityTour?: number;
-  businessAccompany?: number;
+  intercity?: number;
   dailyRental?: number;
-  vipTransfer?: number;
-  businessMeeting?: number;
-  intercityTransfer?: number;
   currency: string;
 }
 
-export interface Driver {
+export interface VehicleResource {
   id: string;
-  name: string;
+  type: string; // 经济型轿车 / 商务车 / SUV / 豪华轿车
+  model: string; // Toyota Camry / Mercedes V-Class
+  year: number;
+  seats: number;
   photo: string;
-  age: number;
-  languages: string[];
-  city: string;
-  experience: string;
-  vehicles: Vehicle[];
-  services: string[];
-  pricing: DriverPricing;
-  coverage: string[];
-  availability: string;
+  gallery?: string[];
+  features: string[];
+  city: string; // 阿拉木图 / 阿斯塔纳
+  pricing: VehicleResourcePricing;
   description: string;
   contact: {
     whatsapp: string;
     wechat: string;
   };
-  rating: number;
-  completedTrips: number;
-  specialties: string[];
+  available: string; // 24小时 / 预约制 等
 }
 
-export interface DriversData {
-  drivers: Driver[];
+export interface VehiclesData {
+  vehicles: VehicleResource[];
 }
 
 // 住宿类型定义

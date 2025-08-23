@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Route } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -34,10 +35,10 @@ export default function Home({ params }: { params: { lang: "zh" | "en" } }) {
             desc: t("中-俄/中-哈口译，$100/天起", "Zh-Ru/Zh-Kk, from $100/day")
           },
           {
-            key: "drivers",
-            title: t("司机服务", "Drivers"),
-            href: `/${lang}/services/drivers`,
-            desc: t("中文司机可选，包车服务", "Chinese-speaking optional, charter service")
+            key: "vehicles",
+            title: t("车辆服务", "Vehicles"),
+            href: `/${lang}/services/vehicles`,
+            desc: t("可选车型目录，包车服务", "Vehicle catalog, charter service")
           },
           {
             key: "accommodations",
@@ -59,7 +60,7 @@ export default function Home({ params }: { params: { lang: "zh" | "en" } }) {
             </CardHeader>
             <CardContent>
               <Button asChild>
-                <Link href={c.href}>{t("查看详情", "View details")}</Link>
+                <Link href={c.href as Route}>{t("查看详情", "View details")}</Link>
               </Button>
             </CardContent>
           </Card>

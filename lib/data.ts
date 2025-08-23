@@ -4,10 +4,10 @@ import type {
   ServicesData, 
   ServiceItem, 
   TranslatorsData, 
-  DriversData, 
   AccommodationsData,
+  VehiclesData,
+  VehicleResource,
   Translator,
-  Driver,
   Accommodation 
 } from "@/types/services";
 
@@ -44,22 +44,7 @@ export function getTranslatorsByCity(city: string): Translator[] {
   return data.translators.filter(t => t.city === city);
 }
 
-// 司机数据读取
-export function getDriversData(): DriversData {
-  const file = path.join(process.cwd(), "data", "drivers.json");
-  const json = fs.readFileSync(file, "utf-8");
-  return JSON.parse(json) as DriversData;
-}
-
-export function getDriverById(id: string): Driver | null {
-  const data = getDriversData();
-  return data.drivers.find(d => d.id === id) || null;
-}
-
-export function getDriversByCity(city: string): Driver[] {
-  const data = getDriversData();
-  return data.drivers.filter(d => d.city === city);
-}
+// 已移除司机数据读取（改为基于车辆目录）
 
 // 住宿数据读取
 export function getAccommodationsData(): AccommodationsData {
@@ -83,6 +68,34 @@ export function getAccommodationsByType(type: string): Accommodation[] {
   return data.accommodations.filter(a => a.type === type);
 }
 
+// 车辆目录数据读取
+export function getVehiclesData(): VehiclesData {
+  const file = path.join(process.cwd(), "data", "vehicles.json");
+  const json = fs.readFileSync(file, "utf-8");
+  return JSON.parse(json) as VehiclesData;
+}
+
+export function getVehicleById(id: string): VehicleResource | null {
+  const data = getVehiclesData();
+  return data.vehicles.find(v => v.id === id) || null;
+}
+
+export function searchVehicles(query: {
+  city?: string;
+  type?: string;
+  seatsMin?: number;
+  seatsMax?: number;
+}): VehicleResource[] {
+  const data = getVehiclesData();
+  return data.vehicles.filter(v => {
+    if (query.city && v.city !== query.city) return false;
+    if (query.type && v.type !== query.type) return false;
+    if (query.seatsMin && v.seats < query.seatsMin) return false;
+    if (query.seatsMax && v.seats > query.seatsMax) return false;
+    return true;
+  });
+}
+
 // 通用搜索函数
 export function searchTranslators(query: {
   city?: string;
@@ -100,21 +113,7 @@ export function searchTranslators(query: {
   });
 }
 
-export function searchDrivers(query: {
-  city?: string;
-  services?: string[];
-  vehicleType?: string;
-  maxRate?: number;
-}): Driver[] {
-  const data = getDriversData();
-  return data.drivers.filter(driver => {
-    if (query.city && driver.city !== query.city) return false;
-    if (query.services && !query.services.some(service => driver.services.includes(service))) return false;
-    if (query.vehicleType && !driver.vehicles.some(vehicle => vehicle.type === query.vehicleType)) return false;
-    if (query.maxRate && driver.pricing.dailyRental && driver.pricing.dailyRental > query.maxRate) return false;
-    return true;
-  });
-}
+// 已移除司机搜索方法
 
 export function searchAccommodations(query: {
   city?: string;
