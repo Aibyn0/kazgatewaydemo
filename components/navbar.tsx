@@ -6,10 +6,7 @@ import { LanguageSwitcher } from "./language-switcher";
 
 const navigation = [
   { name: "home", zh: "首页", en: "Home", href: "" },
-  { name: "translators", zh: "翻译", en: "Translators", href: "/services/translators" },
-  { name: "vehicles", zh: "车辆", en: "Vehicles", href: "/services/vehicles" },
-  { name: "accommodations", zh: "住宿", en: "Stay", href: "/services/accommodations" },
-  { name: "consulting", zh: "咨询", en: "Consulting", href: "/services/consulting" },
+  { name: "services", zh: "服务", en: "Services", href: "/services" },
   { name: "about", zh: "关于", en: "About", href: "/about" },
   { name: "contact", zh: "联系", en: "Contact", href: "/contact" },
 ] as const;
@@ -21,7 +18,8 @@ export function Navbar() {
   
   const isActive = (href: string) => {
     const currentPath = pathname.replace(/^\/[a-z]{2}/, '');
-    return currentPath === href;
+    if (href === '') return currentPath === '';
+    return currentPath === href || currentPath.startsWith(`${href}/`);
   };
 
   return (
