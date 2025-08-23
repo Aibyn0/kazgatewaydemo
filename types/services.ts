@@ -112,30 +112,7 @@ export interface AccommodationsData {
   accommodations: Accommodation[];
 }
 
-// 原有的服务类型保留
-export interface FaqItem {
-  q: string;
-  a: string;
-}
-
-export interface ServiceItem {
-  slug: string;
-  title: string;
-  price: string;
-  tags: string[];
-  description: string;
-  faqs: FaqItem[];
-}
-
-export interface ServiceCategory {
-  slug: "translation" | "driver" | "consulting" | "accommodation" | string;
-  name: string;
-  items: ServiceItem[];
-}
-
-export interface ServicesData {
-  categories: ServiceCategory[];
-}
+// 已移除服务目录的类型定义
 
 // 博客文章类型
 export interface BlogPost {
